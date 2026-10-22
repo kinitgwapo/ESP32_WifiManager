@@ -7,7 +7,7 @@ This project features a configurable Wi-Fi credential through an ESP32 hosted we
 
 <div align="center">
 
-| Task              | What to do                                                         | What you observed                                                                                                  |
+| Task              | What to do                                                         | What I have observed                                                                                               |
 | :---------------- | :----------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 | Wrong password    | Enter a wrong password on the setup page                           | Throws an error in the Serial Monitor indicating that the attempted connection failed                              |
 | Reset settings    | Hold the BOOT button for 3 seconds while the board is running      | When BOOT button is held for 3 seconds, the Wi-Fi credentials are erased (Implemented)                             |

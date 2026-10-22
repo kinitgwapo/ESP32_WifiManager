@@ -4,7 +4,7 @@ Name: Restauro, Kenneth O.
 Assigned Number: 99 (BCA188-ESP32-99)
 
 # Description
-This project features a configurable Wi-Fi credential through an ESP32 hosted web-portal.
+This project features a configurable Wi-Fi credential through an ESP32 hosted web-portal. The library used is called 'WiFiManager' made by Tzapu.
 
 # Laboratory Report
 

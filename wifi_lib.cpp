@@ -15,3 +15,30 @@ void wifi_Setup() {
 
   Serial.println("Successfully connected to Wi-Fi");  
 }
+
+void bootpin_Setup() {
+  pinMode(BOOT_PIN, INPUT_PULLUP);
+}
+
+void wifi_reset_on_bootpressed() {
+  bool pinState = !digitalRead(BOOT_PIN);
+
+  static unsigned long pressedTime = 0;
+  static bool triggered = false;
+
+  if(pinState && !triggered) {
+    pressedTime = millis();
+    triggered = true;
+  }
+
+  if(triggered && (millis() - pressedTime >= HELD)) {
+    triggered = false;
+    Serial.println("Boot button held for 3 seconds! Cleaned up Wi-Fi credentials.");
+    wifi.resetSettings();
+    wifi.reboot();
+  }
+
+  if(!pinState && triggered) {
+    triggered = false;
+  }
+}

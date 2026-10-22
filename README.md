@@ -19,6 +19,14 @@ This project features a configurable Wi-Fi credential through an ESP32 hosted we
 ### WiFiManager Main Feature
 The library 'WiFiManager' made by Tzapu is designed to handle Wifi connections in ESP32 and ESP2866 boards from Espressif Systems. Its main feature is the capability to Re/Configure the Wi-Fi connection without having to re-write a single code, and is done through a Web-Portal.
 
+### Images
+<div align="center">
+  
+<img width="705" height="447" alt="Serial Monitor" src="https://github.com/user-attachments/assets/affe9676-35b2-4fa1-ad36-1a3ff1ead6d8" />
+<img width="720" height="1600" alt="Web-Portal" src="https://github.com/user-attachments/assets/9791dbb4-03ac-4a95-9bda-8b6ecaf1cdf6" />
+
+</div>
+
 # References
 - https://github.com/tzapu/WiFiManager
 - https://www.w3schools.com/tools/tool_markdown_table.php

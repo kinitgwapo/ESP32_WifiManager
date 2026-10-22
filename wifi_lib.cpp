@@ -17,11 +17,11 @@ void wifi_Setup() {
 }
 
 void bootpin_Setup() {
-  pinMode(BOOT_PIN, INPUT_PULLUP);
+  pinMode(BOOTPIN, INPUT_PULLUP);
 }
 
 void wifi_reset_on_bootpressed() {
-  bool pinState = !digitalRead(BOOT_PIN);
+  bool pinState = !digitalRead(BOOTPIN);
 
   static unsigned long pressedTime = 0;
   static bool triggered = false;

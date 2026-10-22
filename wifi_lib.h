@@ -1,7 +1,7 @@
 #ifndef WIFI_LIB_H
 #define WIFI_LIB_H
 
-#define BOOT_PIN 0
+#define BOOTPIN 0
 #define HELD 3000
 
 #include <Arduino.h>

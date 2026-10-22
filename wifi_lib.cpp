@@ -33,9 +33,10 @@ void wifi_reset_on_bootpressed() {
 
   if(triggered && (millis() - pressedTime >= HELD)) {
     triggered = false;
+
     Serial.println("Boot button held for 3 seconds! Cleaned up Wi-Fi credentials.");
-    wifi.resetSettings();
-    wifi.reboot();
+    wifi.resetSettings(); // Clears saved Wi-Fi credentials
+    wifi.reboot(); // Restart ESP32 for the sake of restarting the web-portal
   }
 
   if(!pinState && triggered) {

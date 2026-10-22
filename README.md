@@ -1,3 +1,7 @@
+# Author
+Name: Restauro, Kenneth O.
+Assigned Number: 99 (BCA188-ESP32-99)
+
 # Description
 This project features a configurable Wi-Fi credential through an ESP32 hosted web-portal.
 
